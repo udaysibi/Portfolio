@@ -1,5 +1,6 @@
 import { LightningElement, wire } from 'lwc';
 import PortfolioAssets from '@salesforce/resourceUrl/PortfolioAssets'
+import uday from '@salesforce/resourceUrl/uday'
  import {getRecord, getFieldValue} from 'lightning/uiRecordApi'
 import FULLNAME from '@salesforce/schema/Portfolio__c.Full_Name__c'
 import COMPANY_LOCATION from '@salesforce/schema/Portfolio__c.Company_Location__c'
@@ -19,7 +20,7 @@ export default class PortfolioBanner extends LightningElement {
     trailheadUrl = 'https://www.salesforce.com/trailblazer/udakr'
 
 
-    userPic = `${PortfolioAssets}/PortfolioAssets/userPic.jpeg`
+    userPic = uday
     linkedin = `${PortfolioAssets}/PortfolioAssets/Social/linkedin.svg`
     github = `${PortfolioAssets}/PortfolioAssets/Social/github.svg`
     trailhead = `${PortfolioAssets}/PortfolioAssets/Social/trailhead1.svg`
